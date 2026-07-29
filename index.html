@@ -153,4 +153,58 @@ display: block;
 
 #jumpHint{
 margin-top: 15px;
-    
+font-size: clamp(9px,1.5vw,13px);
+color:#ffffff66;
+letter-spacing:3x;
+animation:blink 1.5s infinite;
+}
+
+
+@keyframes blink {
+0%, 100%{opacity:0.4;}
+50% {opacity:1;}
+}
+
+
+.overlay-screen {
+text-align: center;
+}
+
+
+.big-icon{
+font-size:80px;
+margin-bottom:20px;
+animation:bounce 0.5s infinite alternate;
+}
+
+
+@keyframes bounce{
+from{transform:translateY(-10px);}
+}
+
+
+.overlay-title {
+font-size: clamp(24px,5vw,56px);
+font-weight:900;
+margin-bottom:10px;
+}
+
+
+.overlay-sub{
+font-size:clamp(10px,2vw,16px);
+margin-bottom:40px;
+opacity:0.7;
+letter-spacing:3px;
+}
+
+
+.action-btns{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+
+.action-btns{
+background:transparent;
