@@ -288,13 +288,33 @@ jump-dot.active{background:#00f5ff;box-shadow: 0 0 6px #00f5ff;}
   level 2<br>
 		 <div class="level-tag">MEDIUM.DOUBLE JUMP</div>
 	 </button>
-	 <button class="level-
-			
+	 <button class="level-btn btn-hard" onclick="startGame('hard')">
+      LEVEL 3<br>
+	 <div class="level-tag">HARD.Double jump</div>
+	 </button>
+ </div>
+</div>
 
-		 
+
+<!--GAME-->
 
 
-		 
-		
-		 
-		
+<div id="gameScreen">
+ <div id="progressBar">/div>
+ <div id="hud">
+	<span id="levelLabel">LEVEL1</span>
+	<span id="scorelabel">SCORE:0</span>
+ </div>
+ <div id="jumpindicator">
+  JUMPS:<span class="jump-dot" id="dot1"></span><span class="jump-dot" id="dot2"></span>
+ </div>
+ <canvas id="gameCanvas"></canvas>
+ <div id="jumpHint">TAP /SPACE/CLICK TO JUMP</div>
+ </div>
+
+
+	<!--WIN-->
+
+
+	<div id="winScreen" class="overlay-screen">
+  <div class
