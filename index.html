@@ -316,5 +316,21 @@ jump-dot.active{background:#00f5ff;box-shadow: 0 0 6px #00f5ff;}
 	<!--WIN-->
 
 
-	<div id="winScreen" class="overlay-screen">
-  <div class
+<div id="winScreen" class="overlay-screen">
+ <div class="big-icon"></div>
+ <div class="stars"id=starDisplay"></div>
+ <div class="overlay-title" style="color:00ff88;text-shadow:0 0 30px #00ff88">LEVEL CLEAR!</div>
+ <div class="overlay-sub"id="winMsg">AWESOME JOB! </div>
+ <div class="action-btns">
+ <button class="action-btn"onclick="showMenu()">MENU</button>
+  <button class="action-btn pink" id="nextBtn" onclick="nextLevel()">NEXT</button>
+ </div>
+</div>
+
+
+<!--LOSE-->
+
+
+<div id="loseScreen"class="overlay-screen">
+ <div class="big-icon">/div>
+ <div class="overlay-title" style="color:#ff0080;text-shadow: 0 0 30px#ff0080">GAME OVER</div>
